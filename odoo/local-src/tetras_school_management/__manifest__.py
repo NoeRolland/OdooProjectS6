@@ -9,8 +9,11 @@
     "data": [
         "security/ir.model.access.csv",
         "views/grade_views.xml",
+        "views/contact_views.xml",
         "views/student_views.xml",
         "views/teacher_views.xml",
+        "views/classe_views.xml",
+        "views/control_views.xml",
         "views/menu_views.xml",
         "views/tetras_assets_index.xml",
     ],

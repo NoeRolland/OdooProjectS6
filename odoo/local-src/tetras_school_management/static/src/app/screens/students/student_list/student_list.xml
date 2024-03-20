@@ -5,7 +5,7 @@
          <table>
              <thead>
                  <tr>
-                     <td style="font-weight: bold">Name</td>
+                     <td>Name</td>
                  </tr>
              </thead>
              <tbody>
@@ -16,7 +16,9 @@
                  </t>
              </tbody>
          </table>
-         <div t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
 
+         <button>
+            <div t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
+         </button>
     </t>
 </templates>

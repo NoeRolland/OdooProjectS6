@@ -12,12 +12,6 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../odoo-stubs/odoo-stubs17" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/odoo/external-src/k-erp_branding" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/odoo/external-src/kal-cloud-platform" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/odoo/external-src/kal-it-erp-modules" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/odoo/external-src/odoo-cloud-platform" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/odoo/external-src/server-env" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/odoo/src" vcs="Git" />
   </component>
 </project>

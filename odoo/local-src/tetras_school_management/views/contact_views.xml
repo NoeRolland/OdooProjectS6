@@ -1,0 +1,18 @@
+<odoo>
+    <record id="view_tetras_contact_form" model="ir.ui.view">
+        <field name="name">tetras.contact.form</field>
+        <field name="model">tetras.contact</field>
+        <field name="arch" type="xml">
+            <form string="contact">
+                <sheet>
+                    <group name="contact">
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="birth_day"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

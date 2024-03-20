@@ -1,19 +1,12 @@
 <odoo>
-    <record id="view_tetras_teacher_form" model="ir.ui.view">
-        <field name="name">tetras.teacher.form</field>
+    <record model="ir.ui.view" id="tetras_teacher_form_view_inherit">
+        <field name="name">tetras.teacher.form.inherit</field>
         <field name="model">tetras.teacher</field>
+        <field name="inherit_id" ref="view_tetras_contact_form"/>
         <field name="arch" type="xml">
-            <form string="Teacher">
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="email"/>
-                        <field name="phone"/>
-                        <field name="birth_day"/>
-                        <field name="diploma"/>
-                    </group>
-                </sheet>
-            </form>
+            <xpath expr="//field[@name='birth_day']" position="after">
+                <field name="diploma"/>
+            </xpath>
         </field>
     </record>
 

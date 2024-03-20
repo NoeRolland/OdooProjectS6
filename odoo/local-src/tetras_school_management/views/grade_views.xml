@@ -8,6 +8,8 @@
                     <group>
                         <field name="name"/>
                         <field name="grade"/>
+                        <field name="control_id"/>
+                        <field name="classe_id" invisible="1" />
                         <field name="student_id"/>
                     </group>
                 </sheet>
