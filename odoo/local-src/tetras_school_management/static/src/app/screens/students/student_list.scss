@@ -1,5 +1,42 @@
 .tetras-content {
+    .tetras-student-content {
+        display: block;
 
-  thead {
-        font-weight: bold;}
+      .student-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .student-card {
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .student-image {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        .student-info {
+          padding: 15px;
+          h3.student-name {
+            margin: 0;
+            color: #2d3748;
+            font-size: 1.25rem;
+          }
+          p.student-detail {
+            margin: 5px 0 0;
+            color: #718096;
+          }
+        }
+      }
+  }
 }

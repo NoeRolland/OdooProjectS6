@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-     <t t-name="tetras_school_management.MainScreen">
-         <button class="contact-button">
-            <div t-on-click="() => tetras.showScreen('StudentListScreen')">Students</div>
-         </button>
-         <button class="contact-button">
-            <div t-on-click="() => tetras.showScreen('TeacherListScreen')">Teachers</div>
-         </button>
+    <t t-name="tetras_school_management.MainScreen">
+        <div class="buttons-container">
+            <button class="button students-btn">
+               <div t-on-click="() => tetras.showScreen('StudentListScreen')">Students</div>
+            </button>
+            <button class="button teachers-btn">
+               <div t-on-click="() => tetras.showScreen('TeacherListScreen')">Teachers</div>
+            </button>
+            <button class="button classes-btn">
+               <div t-on-click="() => tetras.showScreen('ClassListScreen')">Class</div>
+            </button>
+            <button class="button control-btn">
+               <div t-on-click="() => tetras.showScreen('ControlListScreen')">Control</div>
+            </button>
+        </div>
     </t>
 </templates>
