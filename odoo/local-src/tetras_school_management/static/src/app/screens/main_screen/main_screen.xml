@@ -8,12 +8,6 @@
             <button class="button teachers-btn">
                <div t-on-click="() => tetras.showScreen('TeacherListScreen')">Teachers</div>
             </button>
-            <button class="button classes-btn">
-               <div t-on-click="() => tetras.showScreen('ClassListScreen')">Class</div>
-            </button>
-            <button class="button control-btn">
-               <div t-on-click="() => tetras.showScreen('ControlListScreen')">Control</div>
-            </button>
         </div>
     </t>
 </templates>

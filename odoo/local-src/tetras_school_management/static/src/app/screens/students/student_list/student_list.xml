@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
-    <div class="tetras-student-content">
         <t t-name="tetras_school_management.StudentListScreen">
-            <div>
-                <table>
-                    <thead>
-                         <tr>
-                             <td>Name</td>
-                         </tr>
-                     </thead>
-                    <tbody>
-                        <div class="student-grid">
-                            <t t-foreach="tetras.students" t-as="student" t-key="student.id">
-                                <div class="student-card">
-                                    <StudentLine name="student.name"
-                                                  studentId="student.id"
-                                                  onClick="() => this.onStudentClick(student)" />
-                                </div>
-                            </t>
-                        </div>
-                    </tbody>
-                </table>
-            </div>
-            <div class="back-container">
-                <button class="button-back">
-                    <div t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
-                </button>
+            <div class="tetras-student-content">
+                <div>
+                    <table>
+                        <thead>
+                             <tr>
+                                 <td>Name</td>
+                             </tr>
+                         </thead>
+                        <tbody>
+                            <div class="student-grid">
+                                <t t-foreach="tetras.students" t-as="student" t-key="student.id">
+                                    <div class="student-card">
+                                        <StudentLine name="student.name"
+                                                      studentId="student.id"
+                                                      onClick="() => this.onStudentClick(student)" />
+                                    </div>
+                                </t>
+                            </div>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="back-container">
+                    <button class="button-back">
+                        <div t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
+                    </button>
+                </div>
             </div>
         </t>
-    </div>
 </templates>
 

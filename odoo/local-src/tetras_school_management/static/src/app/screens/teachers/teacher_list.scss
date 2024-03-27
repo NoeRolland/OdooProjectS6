@@ -1,5 +1,42 @@
 .tetras-content {
+    .tetras-teacher-content {
+        display: block;
 
-  thead {
-        font-weight: bold;}
+      .teacher-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .teacher-card {
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .teacher-image {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        .teacher-info {
+          padding: 15px;
+          h3.teacher-name {
+            margin: 0;
+            color: #2d3748;
+            font-size: 1.25rem;
+          }
+          p.teacher-detail {
+            margin: 5px 0 0;
+            color: #718096;
+          }
+        }
+      }
+  }
 }
