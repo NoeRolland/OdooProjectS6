@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import fields, models, api
 
 
 class Student(models.Model):
@@ -16,3 +16,14 @@ class Student(models.Model):
         string="Classe",
         comodel_name="tetras.classe",
     )
+
+    average_grade = fields.Float(string="Average Grade", compute="_compute_average_grade")
+
+    @api.depends('grade_ids')
+    def _compute_average_grade(self):
+        for student in self:
+            grades = student.grade_ids.mapped('grade')
+            if grades:
+                student.average_grade = sum(grades) / len(grades)
+            else:
+                student.average_grade = 0.0

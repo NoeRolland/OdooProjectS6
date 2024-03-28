@@ -6,6 +6,7 @@
         <field name="arch" type="xml">
             <xpath expr="//group[@name='contact']" position="inside">
                 <field name="classe_id"/>
+                <field name="average_grade"/>
             </xpath>
             <xpath expr="//group[@name='contact']" position="after">
                 <group name="grade">
