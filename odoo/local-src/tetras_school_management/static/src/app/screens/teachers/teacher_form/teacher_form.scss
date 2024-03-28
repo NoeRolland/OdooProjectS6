@@ -1,7 +1,7 @@
 .tetras-content {
-    .tetras-student-content {
+    .tetras-teacher-content {
 
-        .student-line {
+        .teacher-line {
           display: flex;
           align-items: center;
           margin-bottom: 10px;
@@ -16,11 +16,23 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
           }
 
-          .student-details {
+          .teacher-details {
               font-size: 1.25rem;
               color: #32325d;
               margin: 0;
             }
           }
+        }
+        .teacher-form {
+            .teacher-element {
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+              padding: 10px;
+              background: #ffffff;
+              border-radius: 8px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            }
         }
     }

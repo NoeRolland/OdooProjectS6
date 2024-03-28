@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
      <t t-name="tetras_school_management.StudentFormScreen">
-         <div class="student-form">
-            <span>Name: <t t-esc="props.student.name" /></span>
-            <span>Phone: <t t-esc="props.student.phone" /></span>
-            <span>Email: <t t-esc="props.student.email" /></span>
+         <div class="tetras-student-content">
+             <div class="student-form">
+                <span class="student-element">Name: <t t-esc="props.student.name" /></span>
+                <t t-if="props.student.phone">
+                    <span class="student-element">Phone: <t t-esc="props.student.phone" /></span></t>
+                 <t t-if="props.student.email">
+                     <span class="student-element">Email: <t t-esc="props.student.email" /></span></t>
+             </div>
+             <div class="back-container">
+                <button class="button-back">
+                    <div t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
+                </button>
+             </div>
          </div>
-         <button>
-             <div t-on-click="() => this.tetras.showScreen('MainScreen')">Back</div>
-         </button>
      </t>
 </templates>
